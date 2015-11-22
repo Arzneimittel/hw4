@@ -39,11 +39,11 @@ int main(void){
   const string filename = "noisy.txt";
   double* const p = new double [N];
   read(N,filename,p);
-  cout << "Anzahl an Filterumläufen festlegen: n="; 
-  cin >> n ;
-  for(int i=0;i<n;i++){
+  //cout << "Anzahl an Filterumläufen festlegen: n="; 
+  //cin >> n ;
+  //for(int i=0;i<n;i++){
   filter(N,p);
-  }
+  //}
   write(p,N);
   delete[] p;
   return 0;
